@@ -1,7 +1,6 @@
 +++
 title = 'Kommende Veranstaltungen'
 date = 2023-10-22T14:55:45+02:00
-draft = true
 +++
 
 ## Tag der Achtsamkeit (29.10.23)

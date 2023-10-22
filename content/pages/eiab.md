@@ -1,7 +1,6 @@
 +++
 title = 'Europäisches Institut für angewandten Buddhismus'
 date = 2023-10-22T14:57:16+02:00
-draft = true
 +++
 
 Aus dem Reichtum der Lehren Buddhas schöpfend bietet das EIAB ein umfangreiches Angebot an Kursen und Seminaren, in denen mit ganz konkreten Methoden Leiden spürbar gelindert und somit Glück und Frieden in uns – und damit in der Welt – gefördert werden. Ein wesentlicher Teil der Übungsspraxis besteht darin, das im Studium von Buddhas Schriften enthaltene Wissen konkret anwendbar in allen Ebenen des täglichen Lebens zu integrieren.

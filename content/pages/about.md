@@ -1,7 +1,6 @@
 +++
 title = 'Über uns'
 date = 2023-10-22T14:43:55+02:00
-draft = true
 +++
 
 ## Wer wir sind

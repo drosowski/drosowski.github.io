@@ -3,7 +3,6 @@ title = 'Thich Nhat Hanh'
 date = 2023-10-22T14:55:52+02:00
 images = ["images/thay.png"]
 summary = "Das Leben und Wirken von Thay"
-draft = true
 +++
 
 {{< imgScale "images/thay.png" "Thay lädt die Glocke ein" "500x" >}}
