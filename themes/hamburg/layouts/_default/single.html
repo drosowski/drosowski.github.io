@@ -1,0 +1,115 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<article>
+  <header class="article-title">
+    <h1 class="text-primary">{{ .Title }}</h1>
+  </header>
+  <hr>
+  <section>
+    {{ .Content }}
+  </section>
+  <div class="clearfix">
+    {{ if (isset .Params "noshowdate")  }}
+    {{ else }}
+      <div class="post-date">
+        <span class="small">
+          {{ i18n "postedOn" }}
+          {{ .Date.Format ( i18n "dateTimeFormat" ) }}
+        </span>
+      </div>
+    {{ end }}
+    <div>
+      {{ range .Params.tags }}
+        <span class="post-tag small">
+          <a href="{{ ($.Site.GetPage "taxonomy" ( print "/tags/" ( . ) ) ).Permalink }}">
+            #{{ . }}
+          </a>
+        </span>
+      {{ end }}
+    </div>
+  </div>
+  <footer>
+    {{ if and (isset $data "authors") (isset .Params "author") }}
+      {{ $author := index $data.authors .Params.author }}
+        <hr>
+        <section class="author-info">
+          <div class="author-avatar">
+            {{ with $author.avatar }}
+              <img alt="Author Avatar" src="{{ . }}" />
+            {{ end }}
+          </div>
+          <div class="author-meta">
+            {{ with $author.name }}
+              <h2 class="author-name text-primary">{{ . }}</h2>
+            {{ end }}
+            {{ with $author.bio }}
+              <div class="author-bio">{{ . }}</div>
+            {{ end }}
+            {{ with $author.contact }}
+              <a class="btn btn-primary author-contact" href="{{ . }}">
+                <div>
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  &nbsp;{{ i18n "contactMe" }}
+                </div>
+              </a>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ if .Site.Params.UseCommento }}
+      <hr>
+      <h2 class="text-primary">Kommentare</h2>
+      <div id="commento"></div>
+      <script src="https://cdn.commento.io/js/commento.js"></script>
+    {{ else if (isset .Site.Params "disqus") }}
+      {{ with .Site.Params.disqus }}
+        <hr>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = '{{ . }}';
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      {{ end }}
+    {{ end }}
+   {{ if (isset .Params "nopagination")  }}
+    {{ else }}
+    <hr>
+    <nav class="pagination" role="navigation">
+      {{ with .PrevInSection }}
+        <a class="btn btn-primary btn-posts-navigation" href="{{ .Permalink }}">
+          <div>
+            <span aria-hidden="true">&larr;</span> {{ i18n "olderPosts" }}
+          </div>
+        </a>
+      {{ else }}
+        <a class="btn btn-primary btn-posts-navigation disabled" href="#">
+          <div>
+            <span aria-hidden="true">&larr;</span> {{ i18n "olderPosts" }}
+          </div>
+        </a>
+      {{ end }}
+      {{ with .NextInSection }}
+        <a class="btn btn-primary btn-posts-navigation" href="{{ .Permalink }}">
+          <div>
+            {{ i18n "newerPosts" }} <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      {{ else }}
+        <a class="btn btn-primary btn-posts-navigation disabled" href="#">
+          <div>
+            {{ i18n "newerPosts" }} <span aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+      {{ end }}
+     {{ end }}    
+    </nav>
+  </footer>
+</article>
+
+{{ partial "footer.html" . }}

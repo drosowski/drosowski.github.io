@@ -1,0 +1,19 @@
+{{ $imageName := (index .Params 0) }}
+{{ $subtitle := (index .Params 1) }}
+
+{{ $imageDict := partial "getScaledImage.html" (dict "imageName" $imageName) }}
+
+{{ $image := $imageDict.originalImage }}
+
+<figure>
+	<a href={{ $image.Permalink }} target="_blank">
+		<center>
+			<img class="embedded-image" alt="{{ $subtitle | .Page.RenderString }}" src={{ $image.Permalink }}>
+		</center>
+	</a>
+	<figcaption>
+		<center>
+			{{ $subtitle }} ({{ printf "%.*f" 2 (div (len $image.Content) 1000000.0) }}MB)
+		</center>
+	</figcaption>
+</figure>

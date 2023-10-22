@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<section class="article-list">
+  <h1>{{ .Title }}</h1>
+  {{ range .Pages }}
+    <hr>
+    {{ .Render "li" }}
+  {{ end }}
+</section>
+{{ partial "footer.html" . }}

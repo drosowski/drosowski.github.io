@@ -1,0 +1,33 @@
+<article>
+  <header>
+    <h1 class="li-h1"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <div class="clearfix">
+      <div class="post-date pull-left">
+        <span class="li-small">
+          {{ i18n "postedOn" }}
+          {{ .Date.Format ( i18n "dateTimeFormat" ) }}
+        </span>
+      </div>
+    </div>
+  </header>
+
+  {{ if (isset .Params "summary") }}
+    <div class="li-content">
+      <div class="summary-container">
+        <p>{{ .Params.Summary | .Page.RenderString }}</p>
+        <a class="btn btn-primary" href="{{ .Permalink }}">
+          {{ i18n "readMore" }} <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+      {{ if (isset .Params "images") }}
+        <a href="{{ .Permalink }}">
+          {{ $imageName := (index .Params.images 0)}}
+          {{ $imageDict := partial "getScaledImage.html" (dict "ctx" .Page "imageName" (index .Params.images 0) "newSize" "250x") }}
+		  {{ $scaledImage := $imageDict.scaledImage }}
+
+          <img class="embedded-image" alt="{{ .Title }}" src="{{ $scaledImage.Permalink }}"/>
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>

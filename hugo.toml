@@ -1,0 +1,45 @@
+baseURL = 'https://example.org/'
+languageCode = 'de-de'
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = "true"
+title = 'Meditation Bielefeld'
+theme = 'hamburg'
+
+[params]
+    # Short subtitle/tagline. This is displayed in the header.
+    themecolor = "#000000" # Defines the tab color in Chrome for Android.
+    # To load additional CSS styles
+    customCSS = ['hamburg.css']
+    # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
+    ShowGDPRNotice = true	
+	# Since 0.57.0 there's the concept of "main sections". The files for the section "posts" are in "./content/posts/".
+	mainSections = ["posts"]
+
+[languages]
+    [languages.de]
+        languageCode = "de"
+        languageName = "Deutsch"
+        copyright = "&copy; 2023 Meditation Bielefeld"
+
+        [languages.de.params]
+            subtitle = "\"Achtsamkeit ist eine Quelle des Glücks\""        
+            
+        [languages.de.menu]
+            [[languages.de.menu.main]]
+                name = "Über uns"
+                identifier = "about"
+                url = "pages/about"
+            [[languages.de.menu.main]]
+                name = "Veranstaltungen"
+                identifier = "events"
+                url = "pages/events"
+            [[languages.de.menu.main]]
+                name = "Thich Nhat Hanh"
+                identifier = "thay"
+                url = "pages/thay"
+            [[languages.de.menu.main]]
+                name = "EIAB"
+                identifier = "eiab"
+                url = "pages/eiab"
+                
+
