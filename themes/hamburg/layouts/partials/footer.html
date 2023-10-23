@@ -36,8 +36,22 @@
     const menu = document.querySelector('.menu');
   
     menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('show-menu');
+      document.getElementById("mySidenav").style.width = "250px";
     });
+
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    window.onscroll = function() {
+      var scrollPos = window.pageYOffset;
+      if (scrollPos > 10) {
+        menuToggle.style.top = "-50px";
+      } else {
+        menuToggle.style.top = "20px";
+      }
+    } 
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
   </script>  
 </body>
 </html>
