@@ -2,7 +2,6 @@
 title = 'Neuer Internetauftritt'
 summary = 'Willkommen auf dem Internetauftritt der Thich Nhat Hanh Sangha Bielefeld. Schön, dass du zu uns gefunden hast. :-)'
 date = 2023-10-22T15:50:22+02:00
-images = ['images/arrived_small.png']
 +++
 
 {{< imgScale "images/arrived.jpg" "We have arrived, we are home" "500x" >}}

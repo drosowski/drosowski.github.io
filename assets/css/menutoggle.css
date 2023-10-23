@@ -1,0 +1,78 @@
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.show-menu {
+  display: block !important;
+  position: absolute;
+  right: 10px;
+  top: -100px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    background-color: #707070;
+    z-index: 1;
+  }
+
+  .menu a {
+    text-decoration: none;
+    font: "Source Sans Pro";
+    font-size: 17px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .button-list-item {
+    margin-left: 15px;
+    background-color: inherit !important;
+  }
+  
+  .button-list-item:hover {
+    background-color: inherit !important;
+  }
+
+  .btn {
+    display: block;
+    font-size: 13px;    
+    padding: 6px 12px;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: inherit !important;
+  }
+
+  .btn-home {
+    display: none;
+  }
+}

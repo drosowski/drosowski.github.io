@@ -30,5 +30,14 @@
   {{ if (fileExists "layouts/partials/gdpr.html") }}
     {{ partial "gdpr.html" . }}
   {{ end }}
+  
+  <script type="text/javascript">
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+  
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show-menu');
+    });
+  </script>  
 </body>
 </html>

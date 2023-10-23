@@ -108,13 +108,22 @@
       {{ end }}
       
       <!-- sites -->
-      <div class="navbar-container">
-        {{ range .Site.Menus.main.Reverse }}
-          <a class="btn btn-default button-list-item" href="{{ .URL | absLangURL | safeURL }}">
+      <nav class="navbar-container">
+        <div class="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu">
+          {{ range .Site.Menus.main.Reverse }}
+          <li>
+            <a class="btn btn-default button-list-item" href="{{ .URL | absLangURL | safeURL }}">
             {{ .Name }}
-          </a>
-        {{ end }}
-      </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
 
       <!-- Home and language buttons -->
       <div>
