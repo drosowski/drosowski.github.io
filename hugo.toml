@@ -32,6 +32,10 @@ theme = 'hamburg'
                 identifier = "thay"
                 url = "pages/thay"
             [[languages.de.menu.main]]
+                name = "Plum Village"
+                identifier = "plumvillage"
+                url = "pages/plumvillage"                
+            [[languages.de.menu.main]]
                 name = "EIAB"
                 identifier = "eiab"
                 url = "pages/eiab"
