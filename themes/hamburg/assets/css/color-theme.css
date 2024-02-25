@@ -155,11 +155,6 @@ blockquote {
 	border-left: 3px solid #9ccc65;
 }
 
-/* Table */
-table, th, td {
-	border: 1px solid #bdbdbd;
-}
-
 .anchored-heading > a {
 	color: #757575;
 }

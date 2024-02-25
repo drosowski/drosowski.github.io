@@ -20,10 +20,6 @@ theme = 'hamburg'
             
         [languages.de.menu]
             [[languages.de.menu.main]]
-                name = "Über uns"
-                identifier = "about"
-                url = "pages/about"
-            [[languages.de.menu.main]]
                 name = "Veranstaltungen"
                 identifier = "events"
                 url = "pages/events"

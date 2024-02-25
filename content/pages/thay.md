@@ -7,7 +7,7 @@ summary = "Das Leben und Wirken von Thay"
 
 {{< imgScale "images/thay.png" "Thay lädt die Glocke ein" "500x" >}}
 
-Thich Nhat Hanh, Mönch und Zen-Meister, Gelehrter und Poet mit unermüdlichem Engagement für Menschenrechte und Frieden, ist einer der bekanntesten und verehrtesten Zen-Meister unserer Zeit. Seine zahlreichen Bücher wurden weltweit in 22 Sprachen übersetzt. Seine Schüler nennen ihn liebevoll Thay (vietnamesisch für “Lehrer”).
+Thich Nhat Hanh, Mönch und Zen-Meister, Gelehrter und Poet mit unermüdlichem Engagement für Menschenrechte und Frieden, war einer der bekanntesten und verehrtesten Zen-Meister unserer Zeit. Seine zahlreichen Bücher wurden weltweit in 22 Sprachen übersetzt. Seine Schüler nennen ihn liebevoll Thay (vietnamesisch für “Lehrer”).
 
 Er wurde 1926 in Vietnam geboren und trat mit 16 Jahren ins Kloster ein. Während des Vietnamkrieges wurde er Mitbegründer der Bewegung “Engagierter Buddhismus“, 1964 gründetet er in Saigon die “Schule für Jugend und Sozialarbeit”. Diese Organisation setzte sich dafür ein, bombardierte Dörfer wieder aufzubauen, Schulen und medizinische Zentren zu schaffen und landwirtschaftliche Kooperativen zu organisieren.
 
