@@ -8,7 +8,7 @@ date = 2023-10-22T14:55:45+02:00
 Zweimal im Jahr veranstalten wir den _Tag der Achtsamkeit_, einmal im März und einmal im Oktober.
 Der Tag der Achtsamkeit gibt uns die Möglichkeit, einen kompletten Tag für uns und die Praxis zu haben.
 Wir werden gemeinsam Sitz- und Gehmeditation praktizieren, uns einen Dharmavortrag anhören und in Achtsamkeit essen.
-Bei Interesse meldet euch gerne unter info@meditation-bielefeld.org an. :-)
+Bei Interesse meldet euch gerne bei Christel oder Daniel an. :-)
 
 ### Termine 2024
 
