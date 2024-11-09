@@ -10,12 +10,11 @@ Der Tag der Achtsamkeit gibt uns die Möglichkeit, einen kompletten Tag für uns
 Wir werden gemeinsam Sitz- und Gehmeditation praktizieren, uns einen Dharmavortrag anhören und in Achtsamkeit essen.
 Bei Interesse meldet euch gerne bei Christel oder Daniel an. :-)
 
-### Termine 2024
+### Termine 2025
 
 Die Termine für die Tage der Achtsamkeit für das nächste Jahr stehen fest.
-* 10.03.2024
-* 25.08.2024 (Special-Edition mit Georg Lolos: https://georglolos.com)
-* 06.10.2024
+* 06.04.2025
+* 05.10.2025
 
 ## Gehmeditation
 
