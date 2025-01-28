@@ -1,0 +1,4 @@
+{{ $displayName := (index .Params 0)}}
+{{ $link := (index .Params 1)}}
+
+<a href="{{ $link }}" target="_blank">{{ $displayName }}</a>

@@ -80,15 +80,6 @@
   {{ else }}
     <link rel="canonical" href="{{ .Permalink }}" />
   {{ end }}
-
-  {{ with $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ if $paginator.HasPrev }}
-      <link rel="prev" href="{{ $paginator.Prev.URL | absURL }}" />
-    {{ end }}
-    {{ if $paginator.HasNext }}
-      <link rel="next" href="{{ $paginator.Next.URL | absURL }}" />
-    {{ end }}
-  {{ end }}
 </head>
 <body>
   {{ if isset .Params "image" }}
@@ -115,7 +106,7 @@
           <div class="bar"></div>
         </div>
         <ul class="menu">
-          {{ range .Site.Menus.main.Reverse }}
+          {{ range (sort .Site.Menus.main ".Params.index" "asc") }}
           <li>
             <a class="btn btn-default button-list-item" href="{{ .URL | absLangURL | safeURL }}">
             {{ .Name }}
@@ -125,7 +116,7 @@
         </ul>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          {{ range .Site.Menus.main.Reverse }}
+          {{ range (sort .Site.Menus.main ".Params.index" "asc") }}
             <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
           {{ end }}
         </div>        

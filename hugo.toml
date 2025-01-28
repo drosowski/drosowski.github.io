@@ -8,12 +8,13 @@ theme = 'hamburg'
 [params]
 	# Since 0.57.0 there's the concept of "main sections". The files for the section "posts" are in "./content/posts/".
 	mainSections = ["posts"]
+    nopagination = true
 
 [languages]
     [languages.de]
         languageCode = "de"
         languageName = "Deutsch"
-        copyright = "&copy; 2023 Meditation Bielefeld"
+        copyright = "&copy; 2025 Meditation Bielefeld"
 
         [languages.de.params]
             subtitle = "\"Achtsamkeit ist eine Quelle des Glücks\""        
@@ -23,17 +24,29 @@ theme = 'hamburg'
                 name = "Veranstaltungen"
                 identifier = "events"
                 url = "pages/events"
+                [[languages.de.menu.main.params]]
+                    index = 0
             [[languages.de.menu.main]]
                 name = "Thich Nhat Hanh"
                 identifier = "thay"
                 url = "pages/thay"
+                [[languages.de.menu.main.params]]
+                    index = 1
             [[languages.de.menu.main]]
                 name = "Plum Village"
                 identifier = "plumvillage"
                 url = "pages/plumvillage"                
+                [[languages.de.menu.main.params]]
+                    index = 2
             [[languages.de.menu.main]]
                 name = "EIAB"
                 identifier = "eiab"
                 url = "pages/eiab"
-                
-
+                [[languages.de.menu.main.params]]
+                    index = 3
+            [[languages.de.menu.main]]
+                name = "Informationen"
+                identifier = "info"
+                url = "pages/info"
+                [[languages.de.menu.main.params]]
+                    index = 4
