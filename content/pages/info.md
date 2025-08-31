@@ -8,6 +8,6 @@ Hier haben wir einige Informationen zusammengetragen, die heruntergeladen und in
 
 Wir wünschen euch viel Freude damit!
 
-* {{< externalLink "Zeitplan für unseren Sangha Abend" "/download/Zeitplan-Abend.pdf" >}}
-* {{< externalLink "Leitfaden zum Einladen der Glocke" "/download/Glocke-einladen.pdf" >}}
+* {{< externalLink "Ablauf für unseren Sangha Abend" "/download/Ablauf-Sangha-Abend.pdf" >}}
+* {{< externalLink "Leitfaden zum Einladen der Glocke" "/download/Glocke-Einladen.pdf" >}}
 * {{< externalLink "Dharma Austausch" "/download/Dharma-Austausch.pdf" >}}
