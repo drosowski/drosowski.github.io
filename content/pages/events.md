@@ -3,6 +3,12 @@ title = 'Kommende Veranstaltungen'
 date = 2023-10-22T14:55:45+02:00
 +++
 
+## Gehmeditation
+
+{{< imgScale "images/gehmeditation.jpg" "Frieden mit jedem Schritt" "200x" >}}
+
+**Jeden dritten Sonntag im Monat um 11 Uhr** treffen wir uns im Nordpark neben dem Café auf dem Schachbrett zur Gehmeditation. Wir gehen ca. eine Stunde schweigend und achtsam durch den Park.
+
 ## Tag der Achtsamkeit
 
 Zweimal im Jahr veranstalten wir den _Tag der Achtsamkeit_, einmal im März und einmal im Oktober.
@@ -21,9 +27,3 @@ Die Termine für die Tage der Achtsamkeit für das nächste Jahr stehen fest.
 Die Termine für die Tage der Achtsamkeit für das Jahr 2026 sind auch bereits bekannt.
 * 08.03.2026
 * 18.10.2026
-
-## Gehmeditation
-
-{{< imgScale "images/gehmeditation.jpg" "Frieden mit jedem Schritt" "200x" >}}
-
-**Jeden dritten Sonntag im Monat um 11 Uhr** treffen wir uns im Nordpark neben dem Café & Tapasbar zur Gehmeditation. Wir gehen ca. eine Stunde schweigend und achtsam durch den Park.
