@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="404 - Seite nicht gefunden">
+  <Header />
+  <article>
+    <div class="not-found">
+      <h1 class="not-found-heading">
+        <span class="not-found-letter">4</span>
+        <span class="not-found-letter">0</span>
+        <span class="not-found-letter">4</span>
+      </h1>
+      <p>
+        Tut mir leid, aber diese Seite existiert nicht!<br>
+        Benutze die obigen Navigations-Buttons oder gehe zurück zur <a href="/">Startseite</a>.
+      </p>
+    </div>
+  </article>
+  <Footer />
+</BaseLayout>

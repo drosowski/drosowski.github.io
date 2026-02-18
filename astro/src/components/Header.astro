@@ -1,0 +1,50 @@
+---
+const menuItems = [
+  { name: 'Über uns', url: '/', index: 0 },
+  { name: 'Veranstaltungen', url: '/events', index: 1 },
+  { name: 'Thich Nhat Hanh', url: '/thay', index: 2 },
+  { name: 'Plum Village', url: '/plumvillage', index: 3 },
+  { name: 'EIAB', url: '/eiab', index: 4 },
+  { name: 'Informationen', url: '/info', index: 5 },
+];
+
+const currentPath = Astro.url.pathname;
+const isHome = currentPath === '/' || currentPath === '';
+const siteTitle = 'Meditation Bielefeld';
+const subtitle = '"Achtsamkeit ist eine Quelle des Glücks"';
+---
+
+<header class="global-header" style="background-image:url(/images/bg.png)">
+  <section class="header-text">
+    <div class="site-title-container">
+      <h1><a href="/">{siteTitle}</a></h1>
+    </div>
+
+    <h3 class="tag-line">{subtitle}</h3>
+
+    <!-- Desktop and mobile navigation -->
+    <nav class="navbar-container">
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu">
+        {menuItems.map(item => (
+          <li>
+            <a class="btn btn-default button-list-item" href={item.url}>
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <!-- Mobile side navigation -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        {menuItems.map(item => (
+          <a href={item.url}>{item.name}</a>
+        ))}
+      </div>
+    </nav>
+  </section>
+</header>

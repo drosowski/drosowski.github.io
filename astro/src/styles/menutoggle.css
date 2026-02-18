@@ -1,0 +1,73 @@
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #3c2e29;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    font: "Source Sans Pro";
+    font-size: 17px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .btn-home {
+    display: none;
+  }
+}

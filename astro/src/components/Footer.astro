@@ -1,0 +1,41 @@
+---
+const copyright = '&copy; 2026 Meditation Bielefeld';
+---
+
+</main>
+<footer class="global-footer">
+  <div set:html={copyright} />
+</footer>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle?.addEventListener('click', () => {
+    const sidenav = document.getElementById("mySidenav");
+    if (sidenav) sidenav.style.width = "250px";
+  });
+
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  window.onscroll = function() {
+    const scrollPos = window.pageYOffset;
+    const toggle = document.querySelector('.menu-toggle') as HTMLElement;
+    if (toggle) {
+      if (scrollPos > 10) {
+        toggle.style.top = "-50px";
+      } else {
+        toggle.style.top = "20px";
+      }
+    }
+  };
+
+  function closeNav() {
+    const sidenav = document.getElementById("mySidenav");
+    if (sidenav) sidenav.style.width = "0";
+  }
+
+  // Make closeNav globally available
+  (window as any).closeNav = closeNav;
+</script>
+</body>
+</html>

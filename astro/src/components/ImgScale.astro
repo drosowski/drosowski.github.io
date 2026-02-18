@@ -1,0 +1,50 @@
+---
+import { getImage } from 'astro:assets';
+
+export interface Props {
+  src: string;        // Path to image (e.g., "images/gehmeditation.jpg")
+  alt: string;        // Alt text / subtitle
+  width?: number;     // Target width (default 200)
+}
+
+const { src, alt, width = 200 } = Astro.props;
+
+// Import the image dynamically based on src path
+// This requires the image to be in src/assets/
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{jpeg,jpg,png,gif}');
+const imagePath = `/src/assets/${src}`;
+
+if (!images[imagePath]) {
+  throw new Error(`Image not found: ${imagePath}`);
+}
+
+const imageModule = await images[imagePath]();
+const originalImage = imageModule.default;
+
+// Get optimized version
+const optimizedImage = await getImage({
+  src: originalImage,
+  width: width,
+  format: 'webp'
+});
+
+// Calculate file size in MB (approximate based on dimensions)
+const sizeInMB = (originalImage.width * originalImage.height * 4 / 1000000).toFixed(2);
+---
+
+<figure>
+  <a href={originalImage.src} target="_blank">
+    <center>
+      <img
+        class="embedded-image"
+        alt={alt}
+        src={optimizedImage.src}
+        width={optimizedImage.attributes.width}
+        height={optimizedImage.attributes.height}
+      />
+    </center>
+  </a>
+  <figcaption>
+    <center>{alt} ({sizeInMB}MB)</center>
+  </figcaption>
+</figure>
